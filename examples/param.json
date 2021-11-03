@@ -1,0 +1,10 @@
+{
+    "name": "List Areas",
+    "overview": "Get List of Area Information",
+    "method": "get",
+    "path": "{api_endpoint}/fic-eri/v1/areas",
+    "header": {
+        "X-Auth-Token": "<token_id>",
+        "Content-Type": "application/json"
+    }
+}

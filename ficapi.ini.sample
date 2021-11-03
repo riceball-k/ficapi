@@ -1,0 +1,40 @@
+[DEFAULT]
+; FIC APIエンドポイント
+api_endpoint = https://api.ntt.com
+
+[auth]
+; API鍵（暗号化した文字列）
+api_key = xxxxxxxxxxxxxxxxxxx
+; API秘密鍵（暗号化した文字列）
+api_secret = xxxxxxxxxxxxxxxxxxx
+
+[tenant]
+; テナント
+tenant_id = xxxxxxxxxxxxxxxxxxx
+router     = ルータ名
+port       = ポート名
+connection = コネクション名
+
+; xxxxx_idの定義
+router_id     = {{router}}
+port_id       = {{port}}
+connection_id = {{connection}}
+firewall_id   = {{router}_fwid}
+nat_id        = {{router}_natid}
+
+; xxxxx_idの別名定義（xxxxxId）
+tenantId     = {tenant_id}
+routerId     = {router_id}
+portId       = {port_id}
+connectionId = {connection_id}
+firewallId   = {firewall_id}
+natId        = {nat_id}
+
+; 取得期間の開始日時（-nndaysならtoのnn日前）
+; ex:2019-04-02T13:08:43+09:00
+; ex:-30days
+from = -90days
+
+; 取得期間の終了日時（nowなら現在日時）
+; ex:2019-04-02T13:08:43+09:00
+to = now

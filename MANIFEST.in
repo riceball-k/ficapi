@@ -1,0 +1,4 @@
+include LICENSE
+include requirements.txt
+include ficapi.ini.sample
+include READMEjp.md
